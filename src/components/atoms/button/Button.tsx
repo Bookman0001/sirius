@@ -10,6 +10,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Button({ children, bgColor = color.BLACK, ...props }: Props) {
+  console.log('test')
   return (
     <ButtonItem {...props} $bgColor={bgColor}>
       {children}
